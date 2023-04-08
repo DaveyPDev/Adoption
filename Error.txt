@@ -1,0 +1,11 @@
+//when clicking the add pet button the add form page says
+
+//There were errors with your submission. Please fix them and try again.
+
+//when loading. 
+
+//but if you leave things blank it prompts each box that needs a 
+//requirement as it should but when you submit the page it tells
+//you that it submitted and functions properly.
+
+Trying to add margin to no avail

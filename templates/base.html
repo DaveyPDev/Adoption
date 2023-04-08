@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    <title>Adoption</title>
+    <nav class="navbar navbar-expand-lg navbar-light" style='background-color: #75c2ad'>
+        <a class="navbar-brand" style="color: #000" href="{{ url_for('list_pets') }}">Adoption Listings</a>
+        <a class="navbar-brand" style="color: #000" href="{{ url_for('add_pet') }}"> Add Pet </a>
+      </nav>
+</head>
+<body>
+
+<!-- <h1> Adoption Base Page</h1> -->
+
+<!-- <form action="/add" method="POST">
+<button type="submit">Add Pet</button>
+</form> -->
+
+<div class="container">
+
+  {% for msg in get_flashed_messages() %}
+  <div class="alert alert-info">{{ msg }}</div>
+  {% endfor %}
+
+  {% block content %}
+
+  {% endblock %}
+
+</div>
+
+</body>
+</html>

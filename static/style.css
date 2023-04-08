@@ -1,0 +1,11 @@
+.pet_photo {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 40px !important;
+}
+
+.pet_container {
+    margin: 40px !important;
+}
+
